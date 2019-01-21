@@ -11,7 +11,7 @@ function startspam()
 {
     console.log("Spam starting!")
     var server = bot.guilds.get("535604987179302912");
-    var chan = new discord.TextChannel(server,{"id":"535811856363683850"});
+    var chan = new discord.TextChannel(server,{"id":"536880822318530593"});
     spam = bot.setInterval(()=>
     {
         chan.send(randomWord()).then(msg=>{ // Sticking with randomwords.
@@ -32,7 +32,7 @@ bot.on("ready",()=>{
 })
 
 bot.on("message",msg=>{
-    if(msg.author.id == "468479699543130132")
+    if(msg.author.id == "523116488861810689")
     {
         if(msg.content.toLowerCase() == "!start")
         {
@@ -49,7 +49,7 @@ bot.on('message', message => {
     var prefix = "$";
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
-    if (message.author.id !== "468479699543130132") return;
+    if (message.author.id !== "523116488861810689") return;
   
     let command = message.content.split(" ")[0];
     command = command.slice(prefix.length);
